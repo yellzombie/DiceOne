@@ -20,6 +20,11 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.red,
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        title: Text('Dice'),
+      ),
       body: SafeArea(
         child: Container(
             color: Colors.blueGrey,
@@ -30,7 +35,10 @@ class HomeScreen extends StatelessWidget {
               children: [
                 Image.asset('assets/images/dice1.png')
                 ],),),
-            )
+
+      )
         );
+
+
   }
 }
